@@ -21,6 +21,7 @@
 	--modal-btn-border-color: rgba(0, 0, 0, 0.1);
 	--modal-input-border-color: rgba(33, 33, 33, 0.2);
 	--modal-textarea-color: rgba(117, 117, 117, 0.5);
+	--modal-checkbox-color: #212121;
 
 	--portfolio-border-color: #eeeeee;
 	--portfolio-overlay-color: rgba(33, 150, 243, 0.9);
@@ -715,8 +716,8 @@ header > .container {
 	color: var(--title-text-color);
 }
 
-.modal-field {
-	margin-bottom: 10px;
+.modal-field + .modal-field {
+	margin-top: 10px;
 }
 
 .input-label,
@@ -821,6 +822,48 @@ header > .container {
 .modal-submit:hover,
 .modal-submit:focus {
 	background-color: var(--accent-button-color);
+}
+
+.modal-checkbox-field {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.label-check {
+	display: flex;
+	align-items: center;
+
+	font-weight: 400;
+	line-height: 1.71;
+
+	transition-property: border-color;
+	transition-duration: 250ms;
+	transition-timing-function: var(--timing-function);
+}
+
+.icon-checkbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 16px;
+	height: 15px;
+	margin-right: 8px;
+
+	fill: transparent;
+
+	background-color: transparent;
+	border: 2px solid var(--modal-checkbox-color);
+	border-radius: 2px;
+}
+
+.input-check:checked + .label-check .icon-checkbox {
+	fill: var(--additional-text-color);
+	background-color: var(--accent-color);
+	border: transparent;
+}
+
+.input-check:focus + .label-check .icon-checkbox {
+	border-color: var(--accent-color);
 }
 
 /* -----------------PORTFOLIO--------------- */
