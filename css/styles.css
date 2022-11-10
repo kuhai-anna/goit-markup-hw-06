@@ -493,12 +493,8 @@ header > .container {
 
 .footer-container {
 	display: flex;
+	justify-content: space-between;
 	align-items: baseline;
-}
-
-.adress-container,
-.social-links-container {
-	margin-right: 93px;
 }
 
 .footer-logo {
