@@ -801,31 +801,6 @@ header > .container {
 	color: var(--modal-textarea-color);
 }
 
-.modal-submit {
-	padding: 10px 52px;
-	margin: 0 auto;
-
-	background-color: var(--accent-color);
-
-	font-weight: 700;
-	line-height: 1.86;
-	text-align: center;
-	letter-spacing: 0.06em;
-
-	color: var(--additional-text-color);
-
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-	transition-property: background-color;
-	transition-duration: 250ms;
-	transition-timing-function: var(--timing-function);
-}
-
-.modal-submit:hover,
-.modal-submit:focus {
-	background-color: var(--accent-button-color);
-}
-
 .modal-checkbox-field {
 	margin-bottom: 30px;
 }
@@ -833,7 +808,7 @@ header > .container {
 .label-check {
 	display: flex;
 	align-items: center;
-	padding-left: 12px;
+	margin-left: 12px;
 
 	transition-property: border-color;
 	transition-duration: 250ms;
@@ -875,6 +850,31 @@ header > .container {
 
 .input-check:focus + .label-check .icon-checkbox {
 	border-color: var(--accent-color);
+}
+
+.modal-submit {
+	padding: 10px 52px;
+	margin: 0 auto;
+
+	background-color: var(--accent-color);
+
+	font-weight: 700;
+	line-height: 1.86;
+	text-align: center;
+	letter-spacing: 0.06em;
+
+	color: var(--additional-text-color);
+
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: var(--timing-function);
+}
+
+.modal-submit:hover,
+.modal-submit:focus {
+	background-color: var(--accent-button-color);
 }
 
 /* -----------------PORTFOLIO--------------- */
